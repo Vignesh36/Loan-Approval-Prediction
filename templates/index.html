@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction</title>
+    <style>
+        .s1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(168, 0, 112);
+            color: rgba(0, 0, 255, 0.596);
+            font-family: 'Meera Inimai', sans-serif;
+            font-size: 50px;
+        }
+
+        .s2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-self: center;
+            align-content: center;
+            color: rgba(140, 0, 255, 0.678);
+            font-size: 30px;
+            font-family: 'Meera Inimai', sans-serif;
+
+        }
+
+        button {
+            border: 1px solid blue;
+            height: 60px;
+            width: 120px;
+            border-radius: 3px;
+            color: white;
+            background-color: blueviolet;
+            font-size: 15px;
+        }
+
+        select {
+            border: 1px solid blue;
+            height: 30px;
+            border-radius: 3px;
+            color: rgb(38, 29, 29);
+            background-color: rgb(240, 234, 245);
+            font-size: 15px;
+        }
+
+        input {
+            border: 1px solid blue;
+            height: 30px;
+            border-radius: 3px;
+            color: rgb(20, 18, 18);
+            background-color: rgb(240, 234, 245);
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#b0cffc">
+    <div class="s1">Predict the Loan Status</div><br>
+    <br>
+    <br>
+    <form action="predict" method="POST" enctype="multipart/form-data">
+        <center>
+            <div class="s2">
+                <label for="gender">Gender</label>&nbsp;&nbsp;
+                <input type="text" name="gender" id="gender" placeholder="gender" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="married">Married</label>&nbsp;&nbsp;
+                <input type="text" name="married" id="married" placeholder="married" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="dependants">Dependants</label>&nbsp;&nbsp;
+                <input type="text" name="dependants" id="dependants" placeholder="dependants" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="education">Education</label>&nbsp;&nbsp;
+                <input type="text" name="education" id="education" placeholder="education" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="self_employed">Self Employed</label>&nbsp;&nbsp;
+                <input type="text" name="self_employed" id="self_employed" placeholder="self_employed" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="applicant_income">Applicant Income</label>&nbsp;&nbsp;
+                <input type="text" name="applicant_income" id="applicant_income" placeholder="applicant_income" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="coapplicant_income">Coapplicant Income</label>&nbsp;&nbsp;
+                <input type="text" name="coapplicant_income" id="coapplicant_income" placeholder="coapplicant_income"
+                    required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="loan_amount">Loan Amount</label>&nbsp;&nbsp;
+                <input type="text" name="loan_amount" id="loan_amount" placeholder="loan_amount" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="loan_amount_term">Loan Amount Term</label>&nbsp;&nbsp;
+                <input type="text" name="loan_amount_term" id="loan_amount_term" placeholder="loan_amount_term"
+                    required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="credit_history">Credit History</label>&nbsp;&nbsp;
+                <input type="text" name="credit_history" id="credit_history" placeholder="credit_history" required>
+            </div>
+            <br>
+            <div class="s2">
+                <label for="property_area">Property Area</label>&nbsp;&nbsp;
+                <input type="text" name="property_area" id="property_area" placeholder="property_area" required>
+            </div>
+            <br>
+            <br>
+            <button type="submit">Predict</button>
+
+        </center>
+    </form>
+    </div>
+
+</body>
+
+</html>
